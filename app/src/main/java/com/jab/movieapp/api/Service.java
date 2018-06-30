@@ -13,9 +13,9 @@ import retrofit2.http.Query;
 public interface Service {
 
     @GET("movie/popular")
-    Call<MoviesResponse> getPopularMovies(@Query("http://api.themoviedb.org/3/movie/popular?api_key=07700c2b1106a846ad21a79360e15fab")String apiKey);
+    Call<MoviesResponse> getPopularMovies(@Query("http://api.themoviedb.org/3/movie/popular?api_key=)String apiKey);
 
     @GET("movie/top_rated")
-    Call<MoviesResponse> getTopRatedMovies(@Query("http://api.themoviedb.org/3/movie/popular?api_key=07700c2b1106a846ad21a79360e15fab")String apiKey);
+    Call<MoviesResponse> getTopRatedMovies(@Query("http://api.themoviedb.org/3/movie/popular?api_key=)String apiKey);
 
 }
